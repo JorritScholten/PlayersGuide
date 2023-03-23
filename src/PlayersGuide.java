@@ -11,5 +11,6 @@ public class PlayersGuide {
         int length = TerminalInteraction.chooseIntInRange(60, 100);
         Arrow arrow = new Arrow(length, arrowHead, fletching);
         System.out.println("Constructed arrow: " + arrow);
+        System.out.printf("Arrow costs %.2f gold pieces.\n", arrow.getValue());
     }
 }
