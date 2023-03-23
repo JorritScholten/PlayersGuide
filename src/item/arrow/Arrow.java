@@ -17,6 +17,18 @@ public class Arrow {
         this.fletching = fletching;
     }
 
+    static public Arrow createMarksmanArrow() {
+        return new Arrow(65, ArrowHead.STEEL, Fletching.GOOSE_FEATHER);
+    }
+
+    static public Arrow createBeginnerArrow() {
+        return new Arrow(75, ArrowHead.WOOD, Fletching.GOOSE_FEATHER);
+    }
+
+    static public Arrow createEliteArrow() {
+        return new Arrow(95, ArrowHead.STEEL, Fletching.PLASTIC);
+    }
+
     public int getLength() {
         return length;
     }

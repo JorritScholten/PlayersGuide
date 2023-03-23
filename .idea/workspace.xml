@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="completed Day 21 of player's guide">
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="starting work on day 22, updated README.md">
       <change afterPath="$PROJECT_DIR$/src/concept/Value.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/arrow/Arrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/arrow/Arrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/TerminalInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/TerminalInteraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679575320316</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="completed Day 21 of player's guide">
+      <created>1679575494799</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679575494799</updated>
+    </task>
+    <task id="LOCAL-00013" summary="starting work on day 22, updated README.md">
+      <created>1679575727295</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679575727295</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +182,8 @@
     <MESSAGE value="wrote utility function to simplify choosing when presented an enum" />
     <MESSAGE value="added chooseIntInRange function to TerminalInteraction" />
     <MESSAGE value="completed Day 21 of player's guide" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed Day 21 of player's guide" />
+    <MESSAGE value="starting work on day 22, updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting work on day 22, updated README.md" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
