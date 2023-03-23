@@ -43,6 +43,7 @@ public class Arrow implements HasValue {
         return fletching;
     }
 
+    @Override
     public String toString() {
         return "Arrow is " + length + " cm long" +
                 " with an arrow head made from " + arrowHead.name().toLowerCase() +
