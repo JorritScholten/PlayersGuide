@@ -16,6 +16,27 @@ public class TerminalInteraction {
     }
 
     /**
+     * Utility function to ask for an int in range min to max in the terminal.
+     * @param min Minimum value of returned int.
+     * @param max Maximum value of returned int.
+     * @return Chosen int value which is in range.
+     */
+    public static int chooseIntInRange(int min, int max) {
+        int choice = Integer.MIN_VALUE;
+        Scanner scan = new Scanner(System.in);
+        do {
+            try {
+                System.out.printf("Please choose by typing the relevant number (%d to %d):", min, max);
+                choice = scan.nextInt();
+            } catch (InputMismatchException ex) {
+                System.out.println("Invalid choice entered, please try again.");
+                scan.next();
+            }
+        } while (choice < min || choice > max);
+        return choice;
+    }
+
+    /**
      * Utility function to present a choice of options from an enum to the terminal.
      * @param message    Question to print to terminal.
      * @param enumValues Enum.values() of specified enum.
@@ -27,19 +48,7 @@ public class TerminalInteraction {
     public static <T extends Enum<T>> T chooseFromEnum(String message, T[] enumValues) {
         System.out.println(message);
         printIndexedEnum(enumValues);
-
-        Scanner scan = new Scanner(System.in);
-        int choice = -1;
-        do {
-            try {
-                System.out.println("Please choose by typing the relevant number:");
-                choice = scan.nextInt();
-            } catch (InputMismatchException ex) {
-                System.out.println("Invalid choice entered, please try again.");
-                scan.next();
-            }
-        } while (choice < 1 || choice > enumValues.length);
-
+        int choice = chooseIntInRange(1, enumValues.length);
         return enumValues[choice - 1];
     }
 }
