@@ -1,12 +1,19 @@
 package item.arrow;
 
-public enum ArrowHead {
+import concept.HasValue;
+
+public enum ArrowHead implements HasValue {
     STEEL(10),
     WOOD(3),
     OBSIDIAN(5);
-    public final double VALUE;
+    private final double value;
 
     ArrowHead(double value) {
-        this.VALUE = value;
+        this.value = value;
+    }
+
+    @Override
+    public double getValue() {
+        return value;
     }
 }

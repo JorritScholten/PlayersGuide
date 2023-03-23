@@ -1,12 +1,19 @@
 package item.arrow;
 
-public enum Fletching {
+import concept.HasValue;
+
+public enum Fletching implements HasValue {
     PLASTIC(10),
     TURKEY_FEATHER(5),
     GOOSE_FEATHER(3);
-    public final double VALUE;
+    private final double value;
 
     Fletching(double value) {
-        this.VALUE = value;
+        this.value = value;
+    }
+
+    @Override
+    public double getValue() {
+        return value;
     }
 }

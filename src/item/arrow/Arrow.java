@@ -1,6 +1,8 @@
 package item.arrow;
 
-public class Arrow {
+import concept.HasValue;
+
+public class Arrow implements HasValue {
     static private final double VALUE_PER_CM_LENGTH = 0.05;
     private final int length;
     private final ArrowHead arrowHead;
@@ -47,7 +49,8 @@ public class Arrow {
                 " and fletching made from " + fletching.name().toLowerCase().replace('_', ' ') + ".";
     }
 
+    @Override
     public double getValue() {
-        return arrowHead.VALUE + fletching.VALUE + (length * VALUE_PER_CM_LENGTH);
+        return arrowHead.getValue() + fletching.getValue() + (length * VALUE_PER_CM_LENGTH);
     }
 }
