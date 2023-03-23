@@ -37,16 +37,40 @@ public class TerminalInteraction {
     }
 
     /**
+     * Utility function to present a choice of options from a String array to the terminal.
+     * @param prompt  Question to print to terminal.
+     * @param options Array of strings describing the options.
+     * @return index value of selected option.
+     * @throws IllegalArgumentException when options array or prompt is empty.
+     */
+    public static int chooseFromArray(String prompt, String[] options)
+            throws IllegalArgumentException {
+        if (options.length == 0)
+            throw new IllegalArgumentException("List of options shouldn't be empty.");
+        if (prompt.isEmpty())
+            throw new IllegalArgumentException("message shouldn't be empty.");
+        System.out.println(prompt);
+        int i = 1;
+        for (String option : options) {
+            System.out.printf("\t%2d\t-\t%s\n", i, option);
+            i++;
+        }
+        return chooseIntInRange(1, options.length) - 1;
+    }
+
+    /**
      * Utility function to present a choice of options from an enum to the terminal.
-     * @param message    Question to print to terminal.
+     * @param prompt     Question to print to terminal.
      * @param enumValues Enum.values() of specified enum.
      * @param <T>        An enum with at least one type.
      * @return Selected enum option.
-     * @throws IllegalArgumentException when enum has no types.
+     * @throws IllegalArgumentException when enum has no types or prompt is empty.
      * @implNote TODO: write alternate using reflection so that Enum can be passed instead of Enum.Values()
      */
-    public static <T extends Enum<T>> T chooseFromEnum(String message, T[] enumValues) {
-        System.out.println(message);
+    public static <T extends Enum<T>> T chooseFromEnum(String prompt, T[] enumValues) {
+        if (prompt.isEmpty())
+            throw new IllegalArgumentException("message shouldn't be empty.");
+        System.out.println(prompt);
         printIndexedEnum(enumValues);
         int choice = chooseIntInRange(1, enumValues.length);
         return enumValues[choice - 1];

@@ -44,7 +44,7 @@ public class Arrow {
     public String toString() {
         return "Arrow is " + length + " cm long" +
                 " with an arrow head made from " + arrowHead.name().toLowerCase() +
-                " and fletching made from " + fletching.name().toLowerCase();
+                " and fletching made from " + fletching.name().toLowerCase().replace('_', ' ') + ".";
     }
 
     public double getValue() {
