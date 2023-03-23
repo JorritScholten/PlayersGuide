@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Starting with Day 23, modified README.md">
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="added @Override annotation to Arrow.toString because it's overriding Object.toString">
+      <change afterPath="$PROJECT_DIR$/src/item/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +41,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -45,7 +49,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/home/kwek/Documents/ITvitae/Code/ItVitae-java-group-50",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -53,6 +56,11 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="item" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -181,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679579644835</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Starting with Day 23, modified README.md">
+      <created>1679579837498</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679579837498</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added @Override annotation to Arrow.toString because it's overriding Object.toString">
+      <created>1679580932171</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679580932171</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +242,8 @@
     <MESSAGE value="completed day 22" />
     <MESSAGE value="created HasValue interface and reworked code to use it" />
     <MESSAGE value="Starting with Day 23, modified README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting with Day 23, modified README.md" />
+    <MESSAGE value="added @Override annotation to Arrow.toString because it's overriding Object.toString" />
+    <option name="LAST_COMMIT_MESSAGE" value="added @Override annotation to Arrow.toString because it's overriding Object.toString" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
