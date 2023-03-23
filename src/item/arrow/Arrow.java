@@ -16,4 +16,26 @@ public class Arrow {
         this.arrowHead = arrowHead;
         this.fletching = fletching;
     }
+
+    public int getLength() {
+        return length;
+    }
+
+    public ArrowHead getArrowHead() {
+        return arrowHead;
+    }
+
+    public Fletching getFletching() {
+        return fletching;
+    }
+
+    public String toString() {
+        return "Arrow is " + length + " cm long" +
+                " with an arrow head made from " + arrowHead.name().toLowerCase() +
+                " and fletching made from " + fletching.name().toLowerCase();
+    }
+
+    public double getValue() {
+        return arrowHead.VALUE + fletching.VALUE + (length * VALUE_PER_CM_LENGTH);
+    }
 }
