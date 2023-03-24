@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="starting work on Day 24, modified README.md">
-      <change afterPath="$PROJECT_DIR$/src/concept/Color.java" afterDir="false" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="completed day 24">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "Settings.Markdown"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -216,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679581627857</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="completed day 24">
+      <created>1679659035518</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679659035518</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +264,8 @@
     <MESSAGE value="added @Override annotation to Arrow.toString because it's overriding Object.toString" />
     <MESSAGE value="Completed day 23&#10;&#10;The created points are immutable because there are no setter methods for Point.x and Point.y and both are also declared as final" />
     <MESSAGE value="starting work on Day 24, modified README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting work on Day 24, modified README.md" />
+    <MESSAGE value="completed day 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed day 24" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
