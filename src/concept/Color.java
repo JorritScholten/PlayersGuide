@@ -25,6 +25,34 @@ public class Color {
         return new Color(255, 0, 0);
     }
 
+    public static Color createWhite() {
+        return new Color(255, 255, 255);
+    }
+
+    public static Color createBlack() {
+        return new Color(0, 0, 0);
+    }
+
+    public static Color createOrange() {
+        return new Color(255, 165, 0);
+    }
+
+    public static Color createYellow() {
+        return new Color(255, 255, 0);
+    }
+
+    public static Color createGreen() {
+        return new Color(0, 128, 0);
+    }
+
+    public static Color createBlue() {
+        return new Color(0, 0, 255);
+    }
+
+    public static Color createPurple() {
+        return new Color(128, 0, 128);
+    }
+
     @Override
     public String toString() {
         return String.format("Color(%3d,%3d,%3d)", red, green, blue);
