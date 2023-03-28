@@ -16,6 +16,27 @@ public class TerminalInteraction {
     }
 
     /**
+     * Utility function to ask for an int in the terminal.
+     * @param prompt Question to print to terminal.
+     * @return Chosen int value.
+     */
+    public static int askForInt(String prompt) {
+        int choice = Integer.MIN_VALUE;
+        Scanner scan = new Scanner(System.in);
+        do {
+            try {
+                System.out.print(prompt);
+                choice = scan.nextInt();
+            } catch (InputMismatchException ex) {
+                System.out.println("Invalid choice entered, please try again.");
+                scan.next();
+                continue;
+            }
+            return choice;
+        } while (true);
+    }
+
+    /**
      * Utility function to ask for an int in range min to max in the terminal.
      * @param min Minimum value of returned int.
      * @param max Maximum value of returned int.
