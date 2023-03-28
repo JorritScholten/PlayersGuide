@@ -16,6 +16,27 @@ public class TerminalInteraction {
     }
 
     /**
+     * Utility function to ask for a string in the terminal.
+     * @param prompt Question to print to terminal.
+     * @return String value.
+     */
+    public static String askForString(String prompt) {
+        String choice;
+        Scanner scan = new Scanner(System.in);
+        do {
+            try {
+                System.out.print(prompt);
+                choice = scan.nextLine();
+            } catch (InputMismatchException ex) {
+                System.out.println("Invalid choice entered, please try again.");
+                scan.next();
+                continue;
+            }
+            return choice;
+        } while (true);
+    }
+
+    /**
      * Utility function to ask for an int in the terminal.
      * @param prompt Question to print to terminal.
      * @return Chosen int value.

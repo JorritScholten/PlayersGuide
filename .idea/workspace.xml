@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Completed day 26&#10;&#10;Implemented user interaction via TerminalInteraction.chooseFromArray() function. Maybe look into seeing if a dropdown menu is feasible in the terminal.">
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Starting work on Day 27">
+      <change afterPath="$PROJECT_DIR$/src/concept/PasswordValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/TerminalInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/TerminalInteraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -254,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679999801545</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Starting work on Day 27">
+      <created>1680000886981</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1680000886981</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,7 +310,8 @@
     <MESSAGE value="Starting work on day 26" />
     <MESSAGE value="implemented Door class and added extra function to TerminalInteraction to ask for an Int&#10;&#10;TODO: implement terminal based interactive prompting" />
     <MESSAGE value="Completed day 26&#10;&#10;Implemented user interaction via TerminalInteraction.chooseFromArray() function. Maybe look into seeing if a dropdown menu is feasible in the terminal." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed day 26&#10;&#10;Implemented user interaction via TerminalInteraction.chooseFromArray() function. Maybe look into seeing if a dropdown menu is feasible in the terminal." />
+    <MESSAGE value="Starting work on Day 27" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting work on Day 27" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
