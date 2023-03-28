@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Starting work on day 26">
-      <change afterPath="$PROJECT_DIR$/src/item/door/Door.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/item/door/DoorState.java" afterDir="false" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="implemented Door class and added extra function to TerminalInteraction to ask for an Int&#10;&#10;TODO: implement terminal based interactive prompting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/TerminalInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/TerminalInteraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679995167938</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="implemented Door class and added extra function to TerminalInteraction to ask for an Int&#10;&#10;TODO: implement terminal based interactive prompting">
+      <created>1679998871515</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1679998871515</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,7 +288,8 @@
     <MESSAGE value="starting work on Day 24, modified README.md" />
     <MESSAGE value="completed day 24" />
     <MESSAGE value="Starting work on day 26" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting work on day 26" />
+    <MESSAGE value="implemented Door class and added extra function to TerminalInteraction to ask for an Int&#10;&#10;TODO: implement terminal based interactive prompting" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Door class and added extra function to TerminalInteraction to ask for an Int&#10;&#10;TODO: implement terminal based interactive prompting" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
