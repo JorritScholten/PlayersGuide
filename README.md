@@ -2,4 +2,4 @@
 
 Teaching myself Java programming by following the steps in the [player's guide](players_guide_java.md).
 
-**Current task:** [Day 27](/players_guide_java.md#day-27-challenge-the-password-validator-100-xp)
+**Current task:** [Day 28](/players_guide_java.md#day-28-design-challenge-rock-paper-scissors-150-xp)
