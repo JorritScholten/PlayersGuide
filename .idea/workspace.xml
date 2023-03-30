@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="completed rewrite of diagrams to mermaid markup in README.md&#10;&#10;TODO: complete actual explanations">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="plantuml not natively rendered by github and thus removed from README.md">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -309,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680200968225</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="plantuml not natively rendered by github and thus removed from README.md">
+      <created>1680201941708</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1680201941708</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,7 +341,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="switched to markdown version of player's guide" />
     <MESSAGE value="corrected markdown link to specific subheading" />
     <MESSAGE value="created new lauch class and created intellij launch config" />
@@ -360,7 +365,8 @@
     <MESSAGE value="Updated README.md to include instruction on how to open specific completed tasks" />
     <MESSAGE value="created PlantUML diagram code for day 28" />
     <MESSAGE value="completed rewrite of diagrams to mermaid markup in README.md&#10;&#10;TODO: complete actual explanations" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed rewrite of diagrams to mermaid markup in README.md&#10;&#10;TODO: complete actual explanations" />
+    <MESSAGE value="plantuml not natively rendered by github and thus removed from README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="plantuml not natively rendered by github and thus removed from README.md" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

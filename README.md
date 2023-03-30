@@ -66,37 +66,3 @@ i --> l[print: Match concluded! ]
 j --> l
 k --> l
 ```
-
-```plantuml
-@startuml RPSOptionsContest
-!pragma useVerticalIf on
-start
-partition RPSOptions.contest(RPSOptions opponent){
-    if(ordinal() == opponent.ordinal()) then ( yes )
-        :return RPSMatchResult.DRAW;
-        detach
-    ( no )elseif(this == ROCK) then ( yes )
-        if(opponent == PAPER) then ( yes )
-            :return RPSMatchResult.LOSE;
-            detach
-        else ( no )
-            :return RPSMatchResult.WIN;
-            detach
-        endif
-    ( no )elseif(this == PAPER) then ( yes )
-        if(opponent == SCISSORS) then ( yes )
-            :return RPSMatchResult.LOSE;
-            detach
-        else ( no )
-            :return RPSMatchResult.WIN;
-            detach
-        endif
-    else ( no )
-        if(opponent == ROCK) then ( yes )
-            :return RPSMatchResult.LOSE;
-            detach
-        else ( no )
-            :return RPSMatchResult.WIN;
-            detach
-@enduml
-```
