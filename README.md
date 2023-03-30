@@ -30,11 +30,12 @@ classDiagram
 #### RPSOptions.contest() flow:
 
 ```mermaid
+%%{init: { "flowchart": { "curve": "linear" } } }%%
 flowchart TD
     a["RPSMatchResult contest(RPSOptions opponent)"] --> b
     b{{"this == opponent"}} -->|false| d
     b -->|true| c["return DRAW;"]
-    d{{"this == ROCK"}} -->|false| h
+    d{{"this == ROCK"}} ---->|false| h
     d -->|true| e{{"opponent == PAPER"}}
     e -->|true| f["return LOSE;"]
     e -->|false| g["return WIN;"]
@@ -49,6 +50,7 @@ flowchart TD
 #### Main program flow:
 
 ```mermaid
+%%{init: { "flowchart": { "curve": "linear" } } }%%
 flowchart TD
     a[Program start] --> b("Ask for player 1 choice")
     c -->|Invalid input| b
