@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Starting work on Day 27" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Updated README.md to include instruction on how to open specific completed tasks">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/kwek/Documents/ITvitae/Code/ItVitae-java-group-50",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
@@ -265,7 +267,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680000886981</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="switched to openjdk 17. formatted and added some comments to TerminalInteraction">
+      <created>1680169039847</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1680169039847</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Updated README.md to include instruction on how to open specific completed tasks">
+      <created>1680169977718</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1680169977718</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,7 +328,9 @@
     <MESSAGE value="implemented Door class and added extra function to TerminalInteraction to ask for an Int&#10;&#10;TODO: implement terminal based interactive prompting" />
     <MESSAGE value="Completed day 26&#10;&#10;Implemented user interaction via TerminalInteraction.chooseFromArray() function. Maybe look into seeing if a dropdown menu is feasible in the terminal." />
     <MESSAGE value="Starting work on Day 27" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting work on Day 27" />
+    <MESSAGE value="switched to openjdk 17. formatted and added some comments to TerminalInteraction" />
+    <MESSAGE value="Updated README.md to include instruction on how to open specific completed tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md to include instruction on how to open specific completed tasks" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
