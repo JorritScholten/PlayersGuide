@@ -1,0 +1,21 @@
+@startuml program_flow
+start
+repeat :Ask for player 1 choice;
+repeat while(Validate input) is (Invalid)
+->Valid;
+:RPSOptions player1 = RPSOptions.<choice>;;
+repeat :Ask for player 2 choice;
+repeat while(Validate input) is (Invalid)
+->Valid;
+:RPSOptions player2 = RPSOptions.<choice>;;
+switch(player1.contest(player2))
+case( WIN )
+    :print: player1 wins;
+case( LOSE )
+    :print: player2 wins;
+case( DRAW )
+    :print: players draw;
+endswitch
+:print: Match concluded!;
+end
+@enduml

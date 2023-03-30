@@ -1,0 +1,13 @@
+@startuml enums
+enum RPSMatchResult{
+    WIN
+    LOSE
+    DRAW
+}
+enum RPSOptions{
+    ROCK
+    PAPER
+    SCISSORS
+    +RPSMatchResult contest(RPSOptions opponent)
+}
+@enduml
