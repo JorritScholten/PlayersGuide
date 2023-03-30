@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Updated README.md to include instruction on how to open specific completed tasks">
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="created PlantUML diagram code for day 28">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,12 +23,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="834ac4a0f522cbde4a036612e6d20163f179a610" />
@@ -56,14 +51,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/kwek/Documents/ITvitae/Code/ItVitae-java-group-50",
+    "last_opened_file_path": "/home/kwek/Documents/ITvitae/Code/PlayersGuide/doc/day28",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/day28" />
+      <recent name="$PROJECT_DIR$/doc" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="item.door" />
       <recent name="item" />
@@ -281,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680169977718</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Updated README.md to include instruction on how to open specific completed tasks">
+      <created>1680170057777</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1680170057777</updated>
+    </task>
+    <task id="LOCAL-00031" summary="created PlantUML diagram code for day 28">
+      <created>1680178123095</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680178123095</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,7 +344,8 @@
     <MESSAGE value="Starting work on Day 27" />
     <MESSAGE value="switched to openjdk 17. formatted and added some comments to TerminalInteraction" />
     <MESSAGE value="Updated README.md to include instruction on how to open specific completed tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md to include instruction on how to open specific completed tasks" />
+    <MESSAGE value="created PlantUML diagram code for day 28" />
+    <option name="LAST_COMMIT_MESSAGE" value="created PlantUML diagram code for day 28" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
