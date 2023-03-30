@@ -4,10 +4,14 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TerminalInteraction {
-    private static <T extends Enum<T>> void printIndexedEnum(T[] enumValues)
-            throws IllegalArgumentException {
-        if (enumValues.length < 1)
-            throw new IllegalArgumentException("Enum should have at least one type.");
+    /**
+     * Print numbered list of Enum.Values() to console.
+     * @param enumValues Enum.values() of specified enum.
+     * @param <T>        An enum with at least one type.
+     * @throws IllegalArgumentException when enum has no types.
+     */
+    private static <T extends Enum<T>> void printIndexedEnum(T[] enumValues) throws IllegalArgumentException {
+        if (enumValues.length < 1) throw new IllegalArgumentException("Enum should have at least one type.");
         int i = 1;
         for (T value : enumValues) {
             System.out.printf("\t%2d\t-\t%s\n", i, value.name());
@@ -85,12 +89,9 @@ public class TerminalInteraction {
      * @return index value of selected option.
      * @throws IllegalArgumentException when options array or prompt is empty.
      */
-    public static int chooseFromArray(String prompt, String[] options)
-            throws IllegalArgumentException {
-        if (options.length == 0)
-            throw new IllegalArgumentException("List of options shouldn't be empty.");
-        if (prompt.isEmpty())
-            throw new IllegalArgumentException("message shouldn't be empty.");
+    public static int chooseFromArray(String prompt, String[] options) throws IllegalArgumentException {
+        if (options.length == 0) throw new IllegalArgumentException("List of options shouldn't be empty.");
+        if (prompt.isEmpty()) throw new IllegalArgumentException("message shouldn't be empty.");
         System.out.println(prompt);
         int i = 1;
         for (String option : options) {
@@ -110,8 +111,7 @@ public class TerminalInteraction {
      * @implNote TODO: write alternate using reflection so that Enum can be passed instead of Enum.Values()
      */
     public static <T extends Enum<T>> T chooseFromEnum(String prompt, T[] enumValues) {
-        if (prompt.isEmpty())
-            throw new IllegalArgumentException("message shouldn't be empty.");
+        if (prompt.isEmpty()) throw new IllegalArgumentException("message shouldn't be empty.");
         System.out.println(prompt);
         printIndexedEnum(enumValues);
         int choice = chooseIntInRange(1, enumValues.length);
