@@ -50,19 +50,19 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    a[Program start] --> b( Ask for player 1 choice )
-b --> c{{ Validate input }}
-c -->| Invalid input |b
-c -->| Valid input |d("RPSOptions player1 = RPSOptions.< choice >;")
-d --> e( Ask for player 2 choice )
-e --> f{{ Validate input }}
-f -->| Invalid input |e
-f -->| Valid input |g("RPSOptions player2 = RPSOptions.< choice >;")
-g --> h{{"switch(player1.contest(player2))"}}
-h -->| case WIN | i("print: player1 wins")
-h -->| case LOSE | j("print: player2 wins")
-h -->| case DRAW | k("print: players draw")
-i --> l[print: Match concluded! ]
-j --> l
-k --> l
+    a[Program start] --> b("Ask for player 1 choice")
+    c -->|Invalid input| b
+    b --> c{{Validate input}}
+    c -->|Valid input| d("RPSOptions player1 = RPSOptions.< choice >;")
+    d --> e("Ask for player 2 choice")
+    e --> f{{Validate input}}
+    f -->|Invalid input| e
+    f -->|Valid input| g("RPSOptions player2 = RPSOptions.< choice >;")
+    g --> h{{"switch(player1.contest(player2))"}}
+    h -->|case WIN| i("print: player1 wins")
+    h -->|case LOSE| j("print: player2 wins")
+    h -->|case DRAW| k("print: players draw")
+    i --> l[print: Match concluded!]
+    j --> l
+    k --> l
 ```
