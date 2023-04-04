@@ -13,18 +13,23 @@ git checkout day23
 
 ```mermaid
 classDiagram
-    class RPSOptions
-    <<enumeration>> RPSOptions
-    RPSOptions: ROCK
-    RPSOptions: PAPER
-    RPSOptions: SCISSORS
-    RPSOptions: +contest(RPSOptions opponent) RPSMatchResult
+    direction LR
+    class RPSOptions {
+        <<Enumeration>>
+        ROCK
+        PAPER
+        SCISSORS
+        +contest(RPSOptions opponent) RPSMatchResult
+    }
 
-    class RPSMatchResult
-    <<enumeration>> RPSMatchResult
-    RPSMatchResult: WIN
-    RPSMatchResult: LOSE
-    RPSMatchResult: DRAW
+    class RPSMatchResult {
+        <<Enumeration>>
+        WIN
+        LOSE
+        DRAW
+    }
+
+    RPSOptions ..> RPSMatchResult
 ```
 
 #### RPSOptions.contest() flow:
