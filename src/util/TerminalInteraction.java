@@ -20,6 +20,33 @@ public class TerminalInteraction {
     }
 
     /**
+     * Utility function to ask for a character in the terminal.
+     * @param prompt Question to print to terminal.
+     * @return char value.
+     */
+    public static char askForChar(String prompt) {
+        char choice;
+        String scan_out;
+        Scanner scan = new Scanner(System.in);
+        do {
+            try {
+                System.out.print(prompt);
+                scan_out = scan.next();
+                if (scan_out.length() > 1) {
+                    System.out.println("Enter only one character please.");
+                    continue;
+                }
+                choice = scan_out.charAt(0);
+            } catch (InputMismatchException ex) {
+                System.out.println("Invalid choice entered, please try again.");
+                scan.next();
+                continue;
+            }
+            return choice;
+        } while (true);
+    }
+
+    /**
      * Utility function to ask for a string in the terminal.
      * @param prompt Question to print to terminal.
      * @return String value.
