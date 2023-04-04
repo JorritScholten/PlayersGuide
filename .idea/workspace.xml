@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="added dependency link to class diagram">
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="cleaned up and added dependency link to class diagram">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -357,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680595886820</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="cleaned up and added dependency link to class diagram">
+      <created>1680596533347</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1680596533347</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -383,7 +390,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="created Arrow.java and supporting enum classes&#10;&#10;TODO: make a value interface to enhance current implementation" />
     <MESSAGE value="wrote utility function to simplify choosing when presented an enum" />
     <MESSAGE value="added chooseIntInRange function to TerminalInteraction" />
     <MESSAGE value="completed Day 21 of player's guide" />
@@ -408,7 +414,8 @@
     <MESSAGE value="fixed some mermaid formatting in README.md" />
     <MESSAGE value="updated formatting in README.md" />
     <MESSAGE value="added dependency link to class diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="cleaned up and added dependency link to class diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up and added dependency link to class diagram" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
