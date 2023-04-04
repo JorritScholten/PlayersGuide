@@ -1,13 +1,28 @@
 # Player's Guide Project
 
-Teaching myself Java programming by following the steps in the [player's guide](players_guide_java.md). Tasks are
-tagged with git according to their day when completed. Opening the completed Day 23 task is as simple as:
+Teaching myself Java programming by following the steps in the [player's
+guide](players_guide_java.md). Tasks are tagged with git according to their
+day when completed. Opening the completed Day 23 task is as simple as:
 
 ```shell
 git checkout day23
 ```
 
 **Current task:** [Day 28](/players_guide_java.md#day-28-design-challenge-rock-paper-scissors-150-xp)
+
+A simple implementation of the game rock, paper & scissors could be
+implemented as follows. In order to simplify the code implementation the
+[match result](#enums) and [player choice](#enums) are both an Enum so that
+choices are syntactically constrained. The *Enum* for player options,
+RPSOptions, has a public method which accepts the opponents choice and return
+the match result *Enum* (RPSMatchResult). Using an *Enum* as a return type allows
+the main program to easily use a switch statement which results in code which
+is less ambiguous. The [main program flow](#main-program-flow) is detailed
+below in a flow chart and to keep a record of match results whilst the program
+is running, three *int* variables are initialised to zero at program start.
+When a match is concluded the record variables are updated and the user will be
+prompted to continue playing or not. Also detailed below as a flow chart is how
+the [RPSOptions.contest()](#rpsoptionscontest-flow) method works.
 
 #### Enums:
 
