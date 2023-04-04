@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Completed flowchart of main program flow">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Completed day 28&#10; &#10; explanation might be a bit longer than necessary">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -371,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680597706486</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Completed day 28&#10; &#10; explanation might be a bit longer than necessary">
+      <created>1680599516492</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1680599516492</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,7 +403,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added chooseIntInRange function to TerminalInteraction" />
     <MESSAGE value="completed Day 21 of player's guide" />
     <MESSAGE value="starting work on day 22, updated README.md" />
     <MESSAGE value="added static creation methods to Arrow.java to allow for a few predefined types" />
@@ -422,7 +427,8 @@
     <MESSAGE value="added dependency link to class diagram" />
     <MESSAGE value="cleaned up and added dependency link to class diagram" />
     <MESSAGE value="Completed flowchart of main program flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed flowchart of main program flow" />
+    <MESSAGE value="Completed day 28&#10; &#10; explanation might be a bit longer than necessary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed day 28&#10; &#10; explanation might be a bit longer than necessary" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
