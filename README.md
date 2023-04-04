@@ -9,3 +9,21 @@ git checkout day23
 ```
 
 **Current task:** [Day 29](/players_guide_java.md#day-29-design-challenge-15-puzzle-150-xp)
+
+#### Class:
+
+```mermaid
+classDiagram
+    direction LR
+    class PuzzleBoard {
+        -int[][] board
+        -int moves
+        -PuzzleBoard(int width, int height)
+        +create15Puzzle()$ PuzzleBoard
+        +printBoard()
+        +hasWon() boolean
+        +commitMove()
+        +getMoves() int
+        -populateRandom()
+    }
+```
