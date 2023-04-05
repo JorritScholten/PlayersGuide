@@ -18,12 +18,23 @@ classDiagram
     class PuzzleBoard {
         -int[][] board
         -int moves
+        -final int width
+        -final int height
         -PuzzleBoard(int width, int height)
         +create15Puzzle()$ PuzzleBoard
         +printBoard()
         +hasWon() boolean
-        +commitMove()
+        +commitMove(Direction direction, int amount)
         +getMoves() int
         -populateRandom()
+        -getMaxAmount() int
     }
+    class `Direction` {
+        <<Enumeration>>
+        NORTH
+        EAST
+        SOUTH
+        WEST
+    }
+    PuzzleBoard ..> `Direction`
 ```
