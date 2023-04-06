@@ -9,3 +9,27 @@ git checkout day23
 ```
 
 **Current task:** [Day 31](/players_guide_java.md#day-31-design-challenge-tic-tac-toe-300-xp)
+
+#### Class diagram
+
+```mermaid
+classDiagram
+    direction LR
+    class TicTacToe {
+        -TileState[3][3] board
+        +TileState
+        +printBoard()
+        +printNumberedBoard()
+        +printWhichTurn()
+        +commitMove(int position) boolean
+        +getGameWon() boolean
+    }
+    note for TileState "Enum TileState defined in TicTacToe"
+    class TileState {
+        <<Enumeration>>
+        EMPTY
+        CROSS
+        CIRCLE
+    }
+    TicTacToe ..> TileState: Subclass
+```

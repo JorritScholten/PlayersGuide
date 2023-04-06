@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Started day 30">
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Started day 31">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -83,20 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678199089461</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <created>1678199795443</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1678199795443</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial commit">
-      <created>1678199853508</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1678199853508</updated>
     </task>
     <task id="LOCAL-00003" summary="Initial commit">
       <created>1678199938502</created>
@@ -427,7 +413,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680776552976</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Completed day 30">
+      <created>1680783613927</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1680783613928</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Started day 31">
+      <created>1680783697492</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1680783697492</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -453,8 +453,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Completed day 23&#10;&#10;The created points are immutable because there are no setter methods for Point.x and Point.y and both are also declared as final" />
-    <MESSAGE value="starting work on Day 24, modified README.md" />
     <MESSAGE value="completed day 24" />
     <MESSAGE value="Starting work on day 26" />
     <MESSAGE value="implemented Door class and added extra function to TerminalInteraction to ask for an Int&#10;&#10;TODO: implement terminal based interactive prompting" />
@@ -478,7 +476,9 @@
     <MESSAGE value="specified where Direction is defined" />
     <MESSAGE value="Completed day 29" />
     <MESSAGE value="Started day 30" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started day 30" />
+    <MESSAGE value="Completed day 30" />
+    <MESSAGE value="Started day 31" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started day 31" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
