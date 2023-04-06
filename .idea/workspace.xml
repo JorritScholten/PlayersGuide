@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="expanded uml diagram in README.md">
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="specified where Direction is defined">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -406,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680693191626</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="specified where Direction is defined">
+      <created>1680774441360</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1680774441361</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,7 +439,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="created HasValue interface and reworked code to use it" />
     <MESSAGE value="Starting with Day 23, modified README.md" />
     <MESSAGE value="added @Override annotation to Arrow.toString because it's overriding Object.toString" />
     <MESSAGE value="Completed day 23&#10;&#10;The created points are immutable because there are no setter methods for Point.x and Point.y and both are also declared as final" />
@@ -457,7 +463,8 @@
     <MESSAGE value="Added askForChar() to TerminalInteraction" />
     <MESSAGE value="progress on day 29" />
     <MESSAGE value="expanded uml diagram in README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="expanded uml diagram in README.md" />
+    <MESSAGE value="specified where Direction is defined" />
+    <option name="LAST_COMMIT_MESSAGE" value="specified where Direction is defined" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
