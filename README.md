@@ -21,6 +21,7 @@ classDiagram
         -final int width
         -final int height
         -PuzzleBoard(int width, int height)
+        +Direction
         +create15Puzzle()$ PuzzleBoard
         +printBoard()
         +hasWon() boolean
@@ -29,6 +30,7 @@ classDiagram
         -populateRandom()
         -getMaxAmount() int
     }
+    note for `Direction` "Enum Direction defined in PuzzleBoard"
     class `Direction` {
         <<Enumeration>>
         NORTH
@@ -36,5 +38,5 @@ classDiagram
         SOUTH
         WEST
     }
-    PuzzleBoard ..> `Direction`
+    PuzzleBoard ..> `Direction`: Subclass
 ```
