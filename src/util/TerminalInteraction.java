@@ -95,11 +95,22 @@ public class TerminalInteraction {
      * @return Chosen int value which is in range.
      */
     public static int chooseIntInRange(int min, int max) {
+        return chooseIntInRange("Please choose by typing the relevant number", min, max);
+    }
+
+    /**
+     * Utility function to ask for an int in range min to max in the terminal.
+     * @param prompt Question to print to terminal, appended with the range as '(min to max):'.
+     * @param min    Minimum value of returned int.
+     * @param max    Maximum value of returned int.
+     * @return Chosen int value which is in range.
+     */
+    public static int chooseIntInRange(String prompt, int min, int max) {
         int choice = Integer.MIN_VALUE;
         Scanner scan = new Scanner(System.in);
         do {
             try {
-                System.out.printf("Please choose by typing the relevant number (%d to %d):", min, max);
+                System.out.printf("%s (%d to %d):", prompt, min, max);
                 choice = scan.nextInt();
             } catch (InputMismatchException ex) {
                 System.out.println("Invalid choice entered, please try again.");
