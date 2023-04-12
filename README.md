@@ -17,12 +17,15 @@ classDiagram
     direction LR
     class TicTacToe {
         -TileState[3][3] board
-        +TileState
+        -TileState
         +printBoard()
         +printNumberedBoard()
         +printWhichTurn()
         +commitMove(int position) boolean
-        +getGameWon() boolean
+        +getGameComplete() boolean
+        +getWinnerIsX() boolean
+        +getWinnerIsO() boolean
+        -testPlayer(TileState player) boolean
     }
     note for TileState "Enum TileState defined in TicTacToe"
     class TileState {
