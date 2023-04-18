@@ -40,6 +40,14 @@ public class Pack extends InventoryItem {
         return add(item, 1);
     }
 
+    public void printContents() {
+        System.out.println(" Amount | Item");
+        System.out.println("--------|---------------------------------------------");
+        for (ItemStack stack : inventory) {
+            System.out.printf(" %4d   | %s\n", stack.amount(), stack.item());
+        }
+    }
+
     public int getItemCount() {
         int count = 0;
         for (ItemStack stack : inventory) {

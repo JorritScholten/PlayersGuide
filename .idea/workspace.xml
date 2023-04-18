@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/item/storage/Pack.java" afterDir="false" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="expanded functionality of item.arrow.* and created Pack class&#10;&#10;TODO: add printing of pack contents">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/arrow/Arrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/arrow/Arrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/arrow/ArrowHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/arrow/ArrowHead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/arrow/Fletching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/arrow/Fletching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/storage/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/storage/Pack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,13 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678199089461</updated>
-    </task>
-    <task id="LOCAL-00006" summary="created new lauch class and created intellij launch config">
-      <created>1679566787789</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1679566787789</updated>
     </task>
     <task id="LOCAL-00007" summary="created Arrow.java and supporting enum classes&#10;&#10;TODO: make a value interface to enhance current implementation">
       <created>1679569707919</created>
@@ -434,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681808638353</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="expanded functionality of item.arrow.* and created Pack class&#10;&#10;TODO: add printing of pack contents">
+      <created>1681819345839</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1681819345839</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +457,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Completed day 26&#10;&#10;Implemented user interaction via TerminalInteraction.chooseFromArray() function. Maybe look into seeing if a dropdown menu is feasible in the terminal." />
     <MESSAGE value="Starting work on Day 27" />
     <MESSAGE value="switched to openjdk 17. formatted and added some comments to TerminalInteraction" />
     <MESSAGE value="Updated README.md to include instruction on how to open specific completed tasks" />
@@ -485,7 +481,8 @@
     <MESSAGE value="Completed day 31" />
     <MESSAGE value="Started day 32" />
     <MESSAGE value="created framework for defining weight &amp; volume" />
-    <option name="LAST_COMMIT_MESSAGE" value="created framework for defining weight &amp; volume" />
+    <MESSAGE value="expanded functionality of item.arrow.* and created Pack class&#10;&#10;TODO: add printing of pack contents" />
+    <option name="LAST_COMMIT_MESSAGE" value="expanded functionality of item.arrow.* and created Pack class&#10;&#10;TODO: add printing of pack contents" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

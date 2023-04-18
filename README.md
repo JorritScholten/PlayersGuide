@@ -9,3 +9,10 @@ git checkout day23
 ```
 
 **Current task:** [Day 32](/players_guide_java.md#day-32-challenge-packing-inventory-150-xp)
+
+## TODO:
+
+- Implement other items
+- Improve packing menu
+- Improve Pack.printContents()
+- Implement other odds & ends as specified in guide

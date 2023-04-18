@@ -25,5 +25,6 @@ public class PlayersGuide {
             }
         }
         System.out.println("Finished packing, printing contents:");
+        pack.printContents();
     }
 }
