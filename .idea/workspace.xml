@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Started day 31" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Completed day 31">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,13 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678199089461</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Initial commit">
-      <created>1678199938502</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1678199938502</updated>
     </task>
     <task id="LOCAL-00004" summary="switched to markdown version of player's guide">
       <created>1679565878437</created>
@@ -427,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680783697492</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Completed day 31">
+      <created>1681805624732</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1681805624732</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -453,7 +457,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="completed day 24" />
     <MESSAGE value="Starting work on day 26" />
     <MESSAGE value="implemented Door class and added extra function to TerminalInteraction to ask for an Int&#10;&#10;TODO: implement terminal based interactive prompting" />
     <MESSAGE value="Completed day 26&#10;&#10;Implemented user interaction via TerminalInteraction.chooseFromArray() function. Maybe look into seeing if a dropdown menu is feasible in the terminal." />
@@ -478,7 +481,8 @@
     <MESSAGE value="Started day 30" />
     <MESSAGE value="Completed day 30" />
     <MESSAGE value="Started day 31" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started day 31" />
+    <MESSAGE value="Completed day 31" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed day 31" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
