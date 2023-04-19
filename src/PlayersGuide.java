@@ -43,8 +43,11 @@ public class PlayersGuide {
                 System.out.println("Container is full!");
                 break;
             }
+            pack.printStatus();
         }
-        System.out.println("Finished packing, printing contents:");
+        System.out.printf("Finished packing. " +
+                "Bag weighs %.2fkg and %.3fl is used. " +
+                "It contains:\n", pack.getWeight(), pack.getVolume());
         pack.printContents();
     }
 }

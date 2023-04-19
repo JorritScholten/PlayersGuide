@@ -41,6 +41,12 @@ public class Pack extends InventoryItem {
         return add(item, 1);
     }
 
+    public void printStatus() {
+        System.out.printf("%8s%d/%d\n", "Items: ", getItemCount(), getMax_items());
+        System.out.printf("%8s%.2f/%.2f kg\n", "Weight: ", getWeight(), getMax_weight());
+        System.out.printf("%8s%.3f/%.3f l\n", "Volume: ", getVolume(), getMax_volume());
+    }
+
     public void printContents() {
         System.out.println(" Amount | Item");
         System.out.println("--------|---------------------------------------------");
@@ -79,7 +85,20 @@ public class Pack extends InventoryItem {
         return weight;
     }
 
+    public double getMax_weight() {
+        return max_weight;
+    }
+
+    public double getMax_volume() {
+        return max_volume;
+    }
+
+    public int getMax_items() {
+        return max_items;
+    }
+
     record ItemStack(InventoryItem item, int amount) {
+
     }
 
 }
