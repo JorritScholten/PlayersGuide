@@ -16,6 +16,22 @@ public class Robot {
         }
     }
 
+    public int getX() {
+        return x;
+    }
+
+    protected void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    protected void setY(int y) {
+        this.y = y;
+    }
+
     public boolean isPowered() {
         return isPowered;
     }
