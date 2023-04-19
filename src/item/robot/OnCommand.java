@@ -1,7 +1,6 @@
 package item.robot;
 
-public class OnCommand extends RobotCommand {
-    @Override
+public class OnCommand implements RobotCommand {
     public void run(Robot robot) {
         robot.setPowered(true);
     }

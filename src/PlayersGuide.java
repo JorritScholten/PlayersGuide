@@ -6,14 +6,14 @@ public class PlayersGuide {
         System.out.println("Starting up Player's Guide, Day 35.");
         var robot = new Robot();
         final String[] commandOptions = {"on", "off", "north", "east", "south", "west"};
-        RobotCommand command1 = convertChoice(TerminalInteraction.chooseFromArray("Choose 1st command:", commandOptions));
-        RobotCommand command2 = convertChoice(TerminalInteraction.chooseFromArray("Choose 2nd command:", commandOptions));
-        RobotCommand command3 = convertChoice(TerminalInteraction.chooseFromArray("Choose 3rd command:", commandOptions));
+        Object command1 = convertChoice(TerminalInteraction.chooseFromArray("Choose 1st command:", commandOptions));
+        Object command2 = convertChoice(TerminalInteraction.chooseFromArray("Choose 2nd command:", commandOptions));
+        Object command3 = convertChoice(TerminalInteraction.chooseFromArray("Choose 3rd command:", commandOptions));
         robot.setCommands(command1, command2, command3);
         robot.run();
     }
 
-    private static RobotCommand convertChoice(int choice) {
+    private static Object convertChoice(int choice) {
         return switch (choice) {
             case 0 -> new OnCommand();
             case 1 -> new OffCommand();

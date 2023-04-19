@@ -7,9 +7,9 @@ public class Robot {
 
     private boolean isPowered;
 
-    private RobotCommand[] commands = new RobotCommand[3];
+    private Object[] commands = new Object[3];
 
-    public void setCommands(RobotCommand command1, RobotCommand command2, RobotCommand command3) {
+    public void setCommands(Object command1, Object command2, Object command3) {
         commands[0] = command1;
         commands[1] = command2;
         commands[2] = command3;
@@ -17,8 +17,8 @@ public class Robot {
 
     public void run() {
         System.out.printf("[%d %d %b]\n", x, y, isPowered);
-        for (RobotCommand command : commands) {
-            command.run(this);
+        for (var command : commands) {
+            ((RobotCommand) command).run(this);
             System.out.printf("[%d %d %b]\n", x, y, isPowered);
         }
     }

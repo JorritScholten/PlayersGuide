@@ -1,6 +1,6 @@
 package item.robot;
 
-public class OffCommand extends RobotCommand {
+public class OffCommand implements RobotCommand {
     public void run(Robot robot) {
         robot.setPowered(false);
     }
