@@ -44,6 +44,7 @@ public class PlayersGuide {
                 break;
             }
             pack.printStatus();
+            System.out.println(pack);
         }
         System.out.printf("Finished packing. " +
                 "Bag weighs %.2fkg and %.3fl is used. " +

@@ -59,6 +59,27 @@ public class Pack extends InventoryItem {
         }
     }
 
+    @Override
+    public String toString() {
+        if (inventory.isEmpty()) {
+            return "Empty pack.";
+        }
+        String retval = "Pack containing ";
+        for (ItemStack stack : inventory) {
+            if (stack.amount == 1) {
+                retval = retval.concat(stack.item() + ", ");
+            } else {
+                retval = retval.concat(String.format("%d %ss, ", stack.amount(), stack.item()));
+            }
+        }
+        if (inventory.size() == 1) {
+            retval = retval.replaceAll("(, )\\Z", ".");
+        } else {
+            retval = retval.replaceAll("(, )([\\w ]+)(, )$", " and $2.");
+        }
+        return retval;
+    }
+
     public int getItemCount() {
         int count = 0;
         for (ItemStack stack : inventory) {
