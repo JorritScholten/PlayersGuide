@@ -4,8 +4,8 @@ import concept.HasVolume;
 import concept.HasWeight;
 
 public abstract class InventoryItem implements HasVolume, HasWeight {
-    protected final double weight;
-    protected final double volume;
+    private final double weight;
+    private final double volume;
 
     protected InventoryItem(double weight, double volume) {
         this.weight = weight;
