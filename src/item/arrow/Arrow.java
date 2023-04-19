@@ -54,8 +54,8 @@ public class Arrow extends InventoryItem implements HasValue, HasDescription {
     @Override
     public String getDescription() {
         return "Arrow is " + length + " cm long" +
-                " with an arrow head made from " + arrowHead.name().toLowerCase() +
-                " and fletching made from " + fletching.name().toLowerCase().replace('_', ' ') + ".";
+                " with an arrow head made from " + arrowHead.getShortDescription() +
+                " with " + fletching.getDescription() + ".";
     }
 
     @Override

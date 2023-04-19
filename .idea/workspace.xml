@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="expanded functionality of item.arrow.* and created Pack class&#10;&#10;TODO: add printing of pack contents">
-      <change afterPath="$PROJECT_DIR$/src/concept/HasDescription.java" afterDir="false" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="created and implemented HasDescription.java interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item/arrow/Arrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/arrow/Arrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/arrow/ArrowHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/arrow/ArrowHead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/arrow/Fletching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/arrow/Fletching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +88,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678199089461</updated>
-    </task>
-    <task id="LOCAL-00007" summary="created Arrow.java and supporting enum classes&#10;&#10;TODO: make a value interface to enhance current implementation">
-      <created>1679569707919</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1679569707919</updated>
     </task>
     <task id="LOCAL-00008" summary="wrote utility function to simplify choosing when presented an enum">
       <created>1679571621750</created>
@@ -431,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681819345839</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="created and implemented HasDescription.java interface">
+      <created>1681892569160</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1681892569161</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -457,7 +458,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Starting work on Day 27" />
     <MESSAGE value="switched to openjdk 17. formatted and added some comments to TerminalInteraction" />
     <MESSAGE value="Updated README.md to include instruction on how to open specific completed tasks" />
     <MESSAGE value="created PlantUML diagram code for day 28" />
@@ -482,7 +482,8 @@
     <MESSAGE value="Started day 32" />
     <MESSAGE value="created framework for defining weight &amp; volume" />
     <MESSAGE value="expanded functionality of item.arrow.* and created Pack class&#10;&#10;TODO: add printing of pack contents" />
-    <option name="LAST_COMMIT_MESSAGE" value="expanded functionality of item.arrow.* and created Pack class&#10;&#10;TODO: add printing of pack contents" />
+    <MESSAGE value="created and implemented HasDescription.java interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="created and implemented HasDescription.java interface" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
