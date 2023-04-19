@@ -15,4 +15,12 @@ public class Robot {
             System.out.printf("[%d %d %b]\n", x, y, isPowered);
         }
     }
+
+    public boolean isPowered() {
+        return isPowered;
+    }
+
+    protected void setPowered(boolean isPowered) {
+        this.isPowered = isPowered;
+    }
 }

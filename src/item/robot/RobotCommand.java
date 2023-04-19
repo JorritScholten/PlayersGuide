@@ -1,7 +1,5 @@
 package item.robot;
 
-public class RobotCommand {
-    public void run(Robot robot) {
-
-    }
+abstract public class RobotCommand {
+    abstract public void run(Robot robot);
 }
