@@ -1,9 +1,10 @@
 package item.arrow;
 
+import concept.HasDescription;
 import concept.HasValue;
 import item.InventoryItem;
 
-public class Arrow extends InventoryItem implements HasValue {
+public class Arrow extends InventoryItem implements HasValue, HasDescription {
     static private final double VALUE_PER_CM_LENGTH = 0.05;
     static private final double WEIGHT_PER_CM_LENGTH = 0.002;
     static private final double VOLUME_PER_CM_LENGTH = 0.000785398;
@@ -51,10 +52,20 @@ public class Arrow extends InventoryItem implements HasValue {
     }
 
     @Override
-    public String toString() {
+    public String getDescription() {
         return "Arrow is " + length + " cm long" +
                 " with an arrow head made from " + arrowHead.name().toLowerCase() +
                 " and fletching made from " + fletching.name().toLowerCase().replace('_', ' ') + ".";
+    }
+
+    @Override
+    public String getShortDescription() {
+        return length + " cm Arrow";
+    }
+
+    @Override
+    public String toString() {
+        return getShortDescription();
     }
 
     @Override

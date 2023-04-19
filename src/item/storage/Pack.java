@@ -1,5 +1,6 @@
 package item.storage;
 
+import concept.HasDescription;
 import item.InventoryItem;
 
 import java.util.LinkedList;
@@ -44,7 +45,11 @@ public class Pack extends InventoryItem {
         System.out.println(" Amount | Item");
         System.out.println("--------|---------------------------------------------");
         for (ItemStack stack : inventory) {
-            System.out.printf(" %4d   | %s\n", stack.amount(), stack.item());
+            if (stack.item() instanceof HasDescription) {
+                System.out.printf(" %4d   | %s\n", stack.amount(), ((HasDescription) stack.item()).getShortDescription());
+            } else {
+                System.out.printf(" %4d   | %s\n", stack.amount(), stack.item());
+            }
         }
     }
 

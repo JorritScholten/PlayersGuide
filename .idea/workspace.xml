@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="expanded functionality of item.arrow.* and created Pack class&#10;&#10;TODO: add printing of pack contents">
+      <change afterPath="$PROJECT_DIR$/src/concept/HasDescription.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/storage/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/storage/Pack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/arrow/Arrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/arrow/Arrow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
