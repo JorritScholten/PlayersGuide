@@ -3,7 +3,7 @@ import util.TerminalInteraction;
 
 public class PlayersGuide {
     public static void main(String[] args) {
-        System.out.println("Starting up Player's Guide, Day 34.");
+        System.out.println("Starting up Player's Guide, Day 35.");
         var robot = new Robot();
         final String[] commandOptions = {"on", "off", "north", "east", "south", "west"};
         RobotCommand command1 = convertChoice(TerminalInteraction.chooseFromArray("Choose 1st command:", commandOptions));
