@@ -5,7 +5,7 @@ import util.TerminalInteraction;
 
 public class PlayersGuide {
     public static void main(String[] args) {
-        System.out.println("Starting up Player's Guide, Day 32.");
+        System.out.println("Starting up Player's Guide, Day 33.");
         System.out.println("Created empty storage container, choose what to fill it with. " +
                 "Upon exiting contents will be displayed.");
         Pack pack = new Pack(50, 10, 20);
