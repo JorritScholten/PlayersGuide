@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="">
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Started day 37">
+      <change afterPath="$PROJECT_DIR$/src/item/sword/Gemstone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/item/sword/Material.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/sword/Sword.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -72,6 +73,7 @@
       <recent name="$PROJECT_DIR$/doc" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="item.sword" />
       <recent name="item.door" />
       <recent name="item" />
     </key>
@@ -87,13 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678199089461</updated>
-    </task>
-    <task id="LOCAL-00022" summary="completed day 24">
-      <created>1679659035518</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1679659035518</updated>
     </task>
     <task id="LOCAL-00023" summary="Starting work on day 26">
       <created>1679995114980</created>
@@ -431,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681997409176</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Started day 37">
+      <created>1681998271064</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1681998271064</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -457,7 +459,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="progress on day 29" />
     <MESSAGE value="expanded uml diagram in README.md" />
     <MESSAGE value="specified where Direction is defined" />
     <MESSAGE value="Completed day 29" />
@@ -482,7 +483,8 @@
     <MESSAGE value="added debug information to constructor" />
     <MESSAGE value="don't need to define .equals() method for record" />
     <MESSAGE value="used a more elegant statement to test room adjacency" />
-    <option name="LAST_COMMIT_MESSAGE" value="used a more elegant statement to test room adjacency" />
+    <MESSAGE value="Started day 37" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started day 37" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
