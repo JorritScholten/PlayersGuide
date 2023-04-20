@@ -35,10 +35,7 @@ public class RoomCoordinate {
      */
     public boolean isAdjacent(RoomCoordinate otherRoomCoordinate) {
         var otherCoordinate = otherRoomCoordinate.getCoordinate();
-        return ((coordinate.x == (otherCoordinate.x - 1)) && (coordinate.y == otherCoordinate.y)) ||
-                ((coordinate.x == (otherCoordinate.x + 1)) && (coordinate.y == otherCoordinate.y)) ||
-                ((coordinate.y == (otherCoordinate.y - 1)) && (coordinate.x == otherCoordinate.x)) ||
-                ((coordinate.y == (otherCoordinate.y + 1)) && (coordinate.x == otherCoordinate.x));
+        return Math.abs(coordinate.x - otherCoordinate.x) + Math.abs(coordinate.y - otherCoordinate.y) == 1;
     }
 
     public String getName() {

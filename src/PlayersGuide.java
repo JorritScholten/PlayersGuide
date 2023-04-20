@@ -13,12 +13,16 @@ public class PlayersGuide {
         System.out.println("Created " + coordinate2);
         var coordinate3 = new RoomCoordinate(1, 1, "room 3");
         System.out.println("Created " + coordinate3);
+        var coordinate4 = new RoomCoordinate(0, -1, "room 4");
+        System.out.println("Created " + coordinate4);
 
         System.out.println("\ntesting coordinate adjacency and print results:");
         compareCoordinates(origin, coordinate1);
         compareCoordinates(origin, coordinate2);
         compareCoordinates(origin, coordinate3);
         compareCoordinates(coordinate2, coordinate3);
+        compareCoordinates(origin, coordinate4);
+        compareCoordinates(coordinate3, coordinate4);
 
         System.out.println("\ntest creation of duplicate coordinate, " +
                 "program should raise Exception and stop before printing information:");
