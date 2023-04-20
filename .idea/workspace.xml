@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="Completed day 33">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="51195061-38f9-4314-b690-842b2c1cc94d" name="Changes" comment="don't need to define .equals() method for record">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlayersGuide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayersGuide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/concept/RoomCoordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/concept/RoomCoordinate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,34 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678199089461</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Starting with Day 23, modified README.md">
-      <created>1679579644835</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1679579644835</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Starting with Day 23, modified README.md">
-      <created>1679579837498</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1679579837498</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added @Override annotation to Arrow.toString because it's overriding Object.toString">
-      <created>1679580932171</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1679580932171</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Completed day 23&#10;&#10;The created points are immutable because there are no setter methods for Point.x and Point.y and both are also declared as final">
-      <created>1679581517759</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1679581517759</updated>
     </task>
     <task id="LOCAL-00021" summary="starting work on Day 24, modified README.md">
       <created>1679581627857</created>
@@ -430,7 +403,35 @@
       <option name="project" value="LOCAL" />
       <updated>1681907059536</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Started day 36&#10;&#10;Undid changes made for day 35 by moving the changes to a new branch">
+      <created>1681979095434</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1681979095435</updated>
+    </task>
+    <task id="LOCAL-00067" summary="created RoomCoordinate.java, it should be an immutable coordinate system&#10;&#10;TODO: verify functionality">
+      <created>1681981072420</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1681981072420</updated>
+    </task>
+    <task id="LOCAL-00068" summary="added debug information to constructor">
+      <created>1681981886345</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1681981886345</updated>
+    </task>
+    <task id="LOCAL-00069" summary="don't need to define .equals() method for record">
+      <created>1681981948285</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1681981948286</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,10 +457,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="cleaned up and added dependency link to class diagram" />
-    <MESSAGE value="Completed flowchart of main program flow" />
-    <MESSAGE value="Completed day 28&#10; &#10; explanation might be a bit longer than necessary" />
-    <MESSAGE value="Started day 29" />
     <MESSAGE value="Added askForChar() to TerminalInteraction" />
     <MESSAGE value="progress on day 29" />
     <MESSAGE value="expanded uml diagram in README.md" />
@@ -481,7 +478,11 @@
     <MESSAGE value="Completed day 32" />
     <MESSAGE value="Started day 33" />
     <MESSAGE value="Completed day 33" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed day 33" />
+    <MESSAGE value="Started day 36&#10;&#10;Undid changes made for day 35 by moving the changes to a new branch" />
+    <MESSAGE value="created RoomCoordinate.java, it should be an immutable coordinate system&#10;&#10;TODO: verify functionality" />
+    <MESSAGE value="added debug information to constructor" />
+    <MESSAGE value="don't need to define .equals() method for record" />
+    <option name="LAST_COMMIT_MESSAGE" value="don't need to define .equals() method for record" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
