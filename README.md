@@ -21,10 +21,9 @@ classDiagram
     class TicTacToe {
         -TileState[3][3] board
         -TileState
-        +printBoard()
-        +printNumberedBoard()
+        +getBoard(boolean numberAxis) String
         +printWhichTurn()
-        +commitMove(int position) boolean
+        +commitMove(int x, int y) boolean
         +getGameComplete() boolean
         +getWinnerIsX() boolean
         +getWinnerIsO() boolean

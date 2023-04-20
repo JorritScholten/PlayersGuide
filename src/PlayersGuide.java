@@ -4,18 +4,17 @@ import util.TerminalInteraction;
 public class PlayersGuide {
     public static void main(String[] args) {
         System.out.println("Starting up Player's Guide, Day 28.");
-        test();
-        System.exit(0);
         TicTacToe game = new TicTacToe();
-        game.printNumberedBoard();
+        System.out.print(game.getBoard(true));
         do {
             game.printWhichTurn();
-            int position;
+            int[] position;
             do {
-                position = TerminalInteraction.chooseIntInRange("Enter the next move by indicating its " +
-                        "position, prompt will be repeated if position is already taken", 1, 9);
-            } while (!game.commitMove(position));
-            game.printNumberedBoard();
+                position = TerminalInteraction.askForInts("Enter the next move by indicating its " +
+                        "position as a space separated XY coordinate," +
+                        " prompt will be repeated if position is already taken: ", " ", 2);
+            } while (!game.commitMove(position[0], position[1]));
+            System.out.print(game.getBoard(true));
         } while (!game.getGameComplete());
         System.out.println("\n\nGame has completed.");
         if (game.getWinnerIsO()) {
@@ -25,22 +24,6 @@ public class PlayersGuide {
         } else {
             System.out.println("Game has drawn.");
         }
-        game.printBoard();
-    }
-
-    private static void test() {
-        System.out.println("\nrequesting unspecified amount of ints:");
-        var arr = TerminalInteraction.askForInts("input multiple ints, space separated:", " ");
-        for (var i : arr) {
-            System.out.print(i + "\t");
-        }
-        System.out.println();
-
-        System.out.println("\nrequesting 5 ints:");
-        var arr2 = TerminalInteraction.askForInts("input multiple ints, space separated:", " ", 5);
-        for (var i : arr2) {
-            System.out.print(i + "\t");
-        }
-        System.out.println();
+        System.out.print(game.getBoard(false));
     }
 }

@@ -1,71 +1,58 @@
 package game;
 
+import java.util.Arrays;
+
 public class TicTacToe {
-    private TileState[] board = {
-            TileState.EMPTY, TileState.EMPTY, TileState.EMPTY,
-            TileState.EMPTY, TileState.EMPTY, TileState.EMPTY,
-            TileState.EMPTY, TileState.EMPTY, TileState.EMPTY
+    private final TileState[][] board = {
+            {TileState.EMPTY, TileState.EMPTY, TileState.EMPTY},
+            {TileState.EMPTY, TileState.EMPTY, TileState.EMPTY},
+            {TileState.EMPTY, TileState.EMPTY, TileState.EMPTY}
     };
 
-    public void printBoard() {
-        System.out.printf(" %c | %c | %c \n",
-                board[0].charRepresentation,
-                board[1].charRepresentation,
-                board[2].charRepresentation);
-        System.out.printf("---|---|---\n");
-        System.out.printf(" %c | %c | %c \n",
-                board[3].charRepresentation,
-                board[4].charRepresentation,
-                board[5].charRepresentation);
-        System.out.printf("---|---|---\n");
-        System.out.printf(" %c | %c | %c \n",
-                board[6].charRepresentation,
-                board[7].charRepresentation,
-                board[8].charRepresentation);
-    }
-
-    public void printNumberedBoard() {
-        System.out.printf("1%c |2%c |3%c \n",
-                board[0].charRepresentation,
-                board[1].charRepresentation,
-                board[2].charRepresentation);
-        System.out.printf("---|---|---\n");
-        System.out.printf("4%c |5%c |6%c \n",
-                board[3].charRepresentation,
-                board[4].charRepresentation,
-                board[5].charRepresentation);
-        System.out.printf("---|---|---\n");
-        System.out.printf("7%c |8%c |9%c \n",
-                board[6].charRepresentation,
-                board[7].charRepresentation,
-                board[8].charRepresentation);
+    /**
+     * Get representation of board as printable String.
+     * @param numberAxis Label axis with numbers for XY coordinates.
+     * @return String representation of board.
+     */
+    public String getBoard(boolean numberAxis) {
+        return String.format("%10$s" +
+                        "%11$s %1$s | %2$s | %3$s \n" +
+                        "%14$s---|---|---\n" +
+                        "%12$s %4$s | %5$s | %6$s \n" +
+                        "%14$s---|---|---\n" +
+                        "%13$s %7$s | %8$s | %9$s \n",
+                board[0][0], board[1][0], board[2][0],
+                board[0][1], board[1][1], board[2][1],
+                board[0][2], board[1][2], board[2][2],
+                numberAxis ? "Coordinates " + ANSI.COLOUR_FG_BLUE + "X " + ANSI.COLOUR_FG_YELLOW + "Y" + ANSI.COLOUR_RESET + "\n" +
+                        " " + ANSI.COLOUR_BG_BLUE + " 1 | 2 | 3 " + ANSI.COLOUR_RESET + "\n" : "",
+                numberAxis ? ANSI.COLOUR_BG_YELLOW + 1 + ANSI.COLOUR_RESET : "",
+                numberAxis ? ANSI.COLOUR_BG_YELLOW + 2 + ANSI.COLOUR_RESET : "",
+                numberAxis ? ANSI.COLOUR_BG_YELLOW + 3 + ANSI.COLOUR_RESET : "",
+                numberAxis ? ANSI.COLOUR_BG_YELLOW + "-" + ANSI.COLOUR_RESET : ""
+        );
     }
 
     public void printWhichTurn() {
-        int turns = 0;
-        for (TileState tile : board) {
-            turns = tile != TileState.EMPTY ? turns + 1 : turns;
-        }
-        System.out.printf("It is currently %c's turn.\n", (turns % 2 == 0) ? 'X' : 'O');
+        long turns = Arrays.stream(board).flatMap(Arrays::stream).filter(t -> t != TileState.EMPTY).count();
+        System.out.printf("It is currently %s's turn.\n", (turns % 2 == 0) ? TileState.CROSS : TileState.CIRCLE);
     }
 
     /**
      * Place next mark in the game, X goes first.
-     * @param position location on the board of where to place the next mark.
+     * @param x X coordinate on the board of where to place the next mark.
+     * @param y Y coordinate on the board of where to place the next mark.
      * @return false if position already occupied.
      */
-    public boolean commitMove(int position) {
-        if (position < 1 || position > 9) {
-            throw new IllegalArgumentException("position should be between 1 and 9");
+    public boolean commitMove(int x, int y) {
+        if (x < 1 || x > 3 || y < 1 || y > 3) {
+            throw new IllegalArgumentException("Coordinate out of bounds.");
         }
-        if (board[position - 1] != TileState.EMPTY) {
+        if (board[y - 1][x - 1] != TileState.EMPTY) {
             return false;
         } else {
-            int turns = 0;
-            for (TileState tile : board) {
-                turns = tile != TileState.EMPTY ? turns + 1 : turns;
-            }
-            board[position - 1] = (turns % 2 == 0) ? TileState.CROSS : TileState.CIRCLE;
+            long turns = Arrays.stream(board).flatMap(Arrays::stream).filter(t -> t != TileState.EMPTY).count();
+            board[y - 1][x - 1] = (turns % 2 == 0) ? TileState.CROSS : TileState.CIRCLE;
             return true;
         }
     }
@@ -76,10 +63,8 @@ public class TicTacToe {
             return true;
         }
         // if no player has won yet, check if another action can be taken
-        for (TileState tile : board) {
-            if (tile == TileState.EMPTY) {
-                return false;
-            }
+        if (Arrays.stream(board).flatMap(Arrays::stream).anyMatch(t -> t == TileState.EMPTY)) {
+            return false;
         }
         // game is gridlocked thus resulting in a draw
         return true;
@@ -96,31 +81,71 @@ public class TicTacToe {
     private boolean testPlayer(TileState player) {
         for (int i = 0; i < 3; i++) {
             //vertical rows
-            if (board[i] == player && board[3 + i] == player && board[6 + i] == player) {
+            if (board[0][i] == player && board[1][i] == player && board[2][i] == player) {
                 return true;
             }
             //horizontal rows
-            if (board[i * 3] == player && board[1 + (i * 3)] == player && board[2 + (i * 3)] == player) {
+            if (board[i][0] == player && board[i][1] == player && board[i][2] == player) {
                 return true;
             }
         }
         //diagonal rows
-        if (board[0] == player && board[4] == player && board[8] == player) {
+        if (board[0][0] == player && board[1][1] == player && board[2][2] == player) {
             return true;
-        } else if (board[2] == player && board[4] == player && board[6] == player) {
+        } else if (board[2][0] == player && board[1][1] == player && board[0][2] == player) {
             return true;
         }
         return false;
     }
 
     private enum TileState {
-        EMPTY(' '),
-        CROSS('X'),
-        CIRCLE('O');
-        public final char charRepresentation;
+        EMPTY(" "),
+        CROSS("X"),
+        CIRCLE("O");
+        private final String charRepresentation;
 
-        TileState(char charRepresentation) {
+        TileState(String charRepresentation) {
             this.charRepresentation = charRepresentation;
         }
+
+        @Override
+        public String toString() {
+            return charRepresentation;
+        }
+    }
+
+    private class ANSI {
+        static private final String ESCAPE = "\033[";
+        static private final String FG_COLOUR = "3";
+        static private final String BG_COLOUR = "4";
+        static private final String COLOUR_END = "m";
+        static public final String COLOUR_RESET = ESCAPE + 0 + COLOUR_END;
+        static private final int COLOUR_8BIT_BLACK = 0;
+        static public final String COLOUR_FG_BLACK = ESCAPE + FG_COLOUR + COLOUR_8BIT_BLACK + COLOUR_END;
+        static public final String COLOUR_BG_BLACK = ESCAPE + BG_COLOUR + COLOUR_8BIT_BLACK + COLOUR_END;
+        static private final int COLOUR_8BIT_RED = 1;
+        static public final String COLOUR_FG_RED = ESCAPE + FG_COLOUR + COLOUR_8BIT_RED + COLOUR_END;
+        static public final String COLOUR_BG_RED = ESCAPE + BG_COLOUR + COLOUR_8BIT_RED + COLOUR_END;
+        static private final int COLOUR_8BIT_GREEN = 2;
+        static public final String COLOUR_FG_GREEN = ESCAPE + FG_COLOUR + COLOUR_8BIT_GREEN + COLOUR_END;
+        static public final String COLOUR_BG_GREEN = ESCAPE + BG_COLOUR + COLOUR_8BIT_GREEN + COLOUR_END;
+        static private final int COLOUR_8BIT_YELLOW = 3;
+        static public final String COLOUR_FG_YELLOW = ESCAPE + FG_COLOUR + COLOUR_8BIT_YELLOW + COLOUR_END;
+        static public final String COLOUR_BG_YELLOW = ESCAPE + BG_COLOUR + COLOUR_8BIT_YELLOW + COLOUR_END;
+        static private final int COLOUR_8BIT_BLUE = 4;
+        static public final String COLOUR_FG_BLUE = ESCAPE + FG_COLOUR + COLOUR_8BIT_BLUE + COLOUR_END;
+        static public final String COLOUR_BG_BLUE = ESCAPE + BG_COLOUR + COLOUR_8BIT_BLUE + COLOUR_END;
+        static private final int COLOUR_8BIT_MAGENTA = 5;
+        static public final String COLOUR_FG_MAGENTA = ESCAPE + FG_COLOUR + COLOUR_8BIT_MAGENTA + COLOUR_END;
+        static public final String COLOUR_BG_MAGENTA = ESCAPE + BG_COLOUR + COLOUR_8BIT_MAGENTA + COLOUR_END;
+        static private final int COLOUR_8BIT_CYAN = 6;
+        static public final String COLOUR_FG_CYAN = ESCAPE + FG_COLOUR + COLOUR_8BIT_CYAN + COLOUR_END;
+        static public final String COLOUR_BG_CYAN = ESCAPE + BG_COLOUR + COLOUR_8BIT_CYAN + COLOUR_END;
+        static private final int COLOUR_8BIT_WHITE = 7;
+        static public final String COLOUR_FG_WHITE = ESCAPE + FG_COLOUR + COLOUR_8BIT_WHITE + COLOUR_END;
+        static public final String COLOUR_BG_WHITE = ESCAPE + BG_COLOUR + COLOUR_8BIT_WHITE + COLOUR_END;
+        static private final int COLOUR_8BIT_DEFAULT = 9;
+        static public final String COLOUR_FG_DEFAULT = ESCAPE + FG_COLOUR + COLOUR_8BIT_DEFAULT + COLOUR_END;
+        static public final String COLOUR_BG_DEFAULT = ESCAPE + BG_COLOUR + COLOUR_8BIT_DEFAULT + COLOUR_END;
     }
 }
