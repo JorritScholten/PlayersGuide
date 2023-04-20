@@ -115,6 +115,7 @@ public class TerminalInteraction {
             try {
                 System.out.print(prompt);
                 choice = scan.nextLine();
+                integerList.clear();
                 for (String number : choice.split(separator)) {
                     integerList.add(Integer.decode(number));
                 }
@@ -126,7 +127,6 @@ public class TerminalInteraction {
                 } else {
                     throw new RuntimeException("Unhandled Exception: " + ex);
                 }
-                scan.next();
                 continue;
             }
             if (amount > 0 && integerList.size() != amount) {

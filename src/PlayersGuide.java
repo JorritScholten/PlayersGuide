@@ -4,6 +4,8 @@ import util.TerminalInteraction;
 public class PlayersGuide {
     public static void main(String[] args) {
         System.out.println("Starting up Player's Guide, Day 28.");
+        test();
+        System.exit(0);
         TicTacToe game = new TicTacToe();
         game.printNumberedBoard();
         do {
@@ -24,5 +26,21 @@ public class PlayersGuide {
             System.out.println("Game has drawn.");
         }
         game.printBoard();
+    }
+
+    private static void test() {
+        System.out.println("\nrequesting unspecified amount of ints:");
+        var arr = TerminalInteraction.askForInts("input multiple ints, space separated:", " ");
+        for (var i : arr) {
+            System.out.print(i + "\t");
+        }
+        System.out.println();
+
+        System.out.println("\nrequesting 5 ints:");
+        var arr2 = TerminalInteraction.askForInts("input multiple ints, space separated:", " ", 5);
+        for (var i : arr2) {
+            System.out.print(i + "\t");
+        }
+        System.out.println();
     }
 }
