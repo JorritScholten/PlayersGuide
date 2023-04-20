@@ -8,4 +8,4 @@ day when completed. Opening the completed Day 23 task is as simple as:
 git checkout day23
 ```
 
-**Current task:** [Day 34](/players_guide_java.md#day-34-challenge-the-old-robot-200-xp)
+**Current task:** [Day 36](players_guide_java.md#day-36-challenge-room-coordinates-50-xp)
