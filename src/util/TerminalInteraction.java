@@ -97,6 +97,17 @@ public class TerminalInteraction {
      * @return Array of int values.
      */
     public static int[] askForInts(String prompt, String separator) {
+        return askForInts(prompt, separator, -1);
+    }
+
+    /**
+     * Utility function to ask for a specified amount of int values in the terminal.
+     * @param prompt    Question to print to terminal.
+     * @param separator regex for separating input.
+     * @param amount    Amount of values user should enter, ignored if negative or zero.
+     * @return Array of int values.
+     */
+    public static int[] askForInts(String prompt, String separator, int amount) {
         List<Integer> integerList = new ArrayList<>();
         String choice;
         Scanner scan = new Scanner(System.in);
@@ -116,6 +127,10 @@ public class TerminalInteraction {
                     throw new RuntimeException("Unhandled Exception: " + ex);
                 }
                 scan.next();
+                continue;
+            }
+            if (amount > 0 && integerList.size() != amount) {
+                System.out.println("Amount of int values is wrong, please try again.");
                 continue;
             }
             return integerList.stream().mapToInt(Integer::intValue).toArray();
