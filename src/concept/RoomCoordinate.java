@@ -10,8 +10,9 @@ public class RoomCoordinate {
     public RoomCoordinate(int x, int y) throws IllegalArgumentException {
         coordinate = new Coordinate(x, y);
         if (!coordinates.add(coordinate)) {
-            throw new IllegalArgumentException("Coordinate already in use, must be unique.");
+            throw new IllegalArgumentException(String.format("Coordinate (%d,%d) already in use, must be unique.", x, y));
         }
+        System.out.printf("Created Roomcoordinate at (%d,%d)\n", x, y);
     }
 
     public boolean isAdjacent(RoomCoordinate otherRoomCoordinate) {
