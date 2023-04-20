@@ -12,7 +12,7 @@ public class RoomCoordinate {
         if (!coordinates.add(coordinate)) {
             throw new IllegalArgumentException(String.format("Coordinate (%d,%d) already in use, must be unique.", x, y));
         }
-        System.out.printf("Created Roomcoordinate at (%d,%d)\n", x, y);
+        System.out.printf("Created RoomCoordinate at (%d,%d)\n", x, y);
     }
 
     public boolean isAdjacent(RoomCoordinate otherRoomCoordinate) {
@@ -28,13 +28,5 @@ public class RoomCoordinate {
     }
 
     public record Coordinate(int x, int y) {
-        @Override
-        public boolean equals(Object otherCoordinate) {
-            if (!(otherCoordinate instanceof Coordinate)) {
-                return false;
-            }
-            return (((Coordinate) otherCoordinate).x == this.x) &&
-                    (((Coordinate) otherCoordinate).y == this.y);
-        }
     }
 }
