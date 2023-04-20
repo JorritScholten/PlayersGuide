@@ -1,6 +1,8 @@
 package util;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class TerminalInteraction {
@@ -85,6 +87,38 @@ public class TerminalInteraction {
                 continue;
             }
             return choice;
+        } while (true);
+    }
+
+    /**
+     * Utility function to ask for an array of int values in the terminal.
+     * @param prompt    Question to print to terminal.
+     * @param separator regex for separating input.
+     * @return Array of int values.
+     */
+    public static int[] askForInts(String prompt, String separator) {
+        List<Integer> integerList = new ArrayList<>();
+        String choice;
+        Scanner scan = new Scanner(System.in);
+        do {
+            try {
+                System.out.print(prompt);
+                choice = scan.nextLine();
+                for (String number : choice.split(separator)) {
+                    integerList.add(Integer.decode(number));
+                }
+            } catch (Exception ex) {
+                if (ex instanceof InputMismatchException) {
+                    System.out.println("Invalid choice entered, please try again.");
+                } else if (ex instanceof NumberFormatException) {
+                    System.out.println("Input is not formatted correctly, please try again.");
+                } else {
+                    throw new RuntimeException("Unhandled Exception: " + ex);
+                }
+                scan.next();
+                continue;
+            }
+            return integerList.stream().mapToInt(Integer::intValue).toArray();
         } while (true);
     }
 
